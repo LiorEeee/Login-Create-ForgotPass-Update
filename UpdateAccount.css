@@ -1,0 +1,149 @@
+﻿*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    zoom: 85%;
+}
+
+form {
+    height: 700px;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+    form * {
+        color: #000000;
+        letter-spacing: 0.5px;
+        outline: none;
+        border: none;
+    }
+
+    form h3 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 42px;
+        text-align: center;
+    }
+
+#UserName_Label,#Password_Label,#FirstName_Label,#LastName_Label,#ID_Label,#Gmail_Label,#PhoneNumber_Label {
+    font-family: 'Gill Sans', sans-serif;
+    display: block;
+    margin-top: 32px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#LastName_Label, #ID_Label, #PhoneNumber_Label, #LastName_TextBox, #ID_TextBox, #PhoneNumber_TextBox, #LastName_Validator, #ID_Validator, #PhoneNumber_Validator, #LastName_RequiredValidator, #ID_RequiredValidator, #PhoneNumber_RequiredValidator {
+    float: right;
+    width: 45%;
+}
+
+#FirstName_Label,#FirstName_TextBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Error, #IsGood_Label {
+    font-family: 'Gill Sans', sans-serif;
+    color: red;
+    display: block;
+    margin-top: 6px;
+    font-size: 10px;
+    font-weight: 200;
+    width: 45%;
+    height: 12px;
+    overflow: hidden;
+}
+.clear {
+    clear: both;
+}
+
+#Title_Label {
+    font-family: 'Gill Sans', sans-serif;
+    display: block;
+    margin-top: 0px;
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+}
+
+#Back_Label, #Edit_LinkButton {
+    font-family: 'Gill Sans', sans-serif;
+    color: blue;
+    display: block;
+    margin-top: -50px;
+    font-size: 12px;
+    font-weight: 200;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#Back_Label {
+    float: right;
+}
+
+    input {
+        display: block;
+        height: 50px;
+        width: 45%;
+        background-color: rgba(0, 0, 0, 0.07);
+        border-radius: 3px;
+        padding: 0 10px;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+#Password_TextBox {
+    width: 100%;
+}
+
+::placeholder {
+    color: #999999;
+}
+
+#UpdateInfo_Button{
+    margin-top: 50px;
+    width: 50%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.07);
+    color: #000000;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    #UpdateInfo_Button:hover{
+        background-color: rgba(0, 0, 0, 0.17);
+        color: #000000;
+    }
+
+#LastName_TextBox[readonly],#ID_TextBox[readonly],#UserName_TextBox[readonly],#FirstName_TextBox[readonly],#Gmail_TextBox[readonly],#PhoneNumber_TextBox[readonly] {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
